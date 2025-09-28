@@ -1,0 +1,470 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* FULLSCREEN BANNER */
+.fullscreen-banner {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../assest/hemodialysis-room-equipment_44762-878.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.fullscreen-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4); /* dark overlay for readability */
+}
+
+.banner-text {
+  position: relative;  
+  color: white;
+  text-align: center;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.banner-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.banner-text p {
+  font-size: 20px;
+}
+
+.innovation-section {
+  padding: 80px 20px;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+
+.innovation-section h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0b3d91;
+}
+
+.innovation-description {
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Grid Layout for Features */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Feature Cards */
+.feature-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.feature-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #0b3d91;
+}
+
+.feature-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #0b3d91;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .innovation-section h2 {
+    font-size: 32px;
+  }
+  .feature-card {
+    padding: 25px 15px;
+  }
+}
+
+.scroll-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 16px 35px;   /* bigger padding for height and width */
+  background-color: #0b3d91;
+  color: white;
+  border-radius: 8px;   /* slightly larger rounded corners */
+  font-weight: 700;     /* bolder text */
+  font-size: 20px;      /* larger text */
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.scroll-btn:hover {
+  background-color: #074080;
+}
+
+.team-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0b3d91;
+}
+
+.team-description {
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Grid for Team Members */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Member Card */
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #0b3d91;
+}
+
+.team-member h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #0b3d91;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Hover effect */
+.team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team-section h2 {
+    font-size: 32px;
+  }
+  .team-member img {
+    width: 120px;
+    height: 120px;
+  }
+}
+.mentor-section {
+  padding: 80px 20px;
+  background-color: #f0f8ff; /* subtle different background */
+  text-align: center;
+}
+
+.mentor-section h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0b3d91;
+}
+
+.mentor-description {
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Grid for Mentors */
+.mentor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Individual Mentor Card */
+.mentor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mentor-card img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #0b3d91;
+}
+
+.mentor-card h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #0b3d91;
+}
+
+.mentor-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Hover effect */
+.mentor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mentor-section h2 {
+    font-size: 32px;
+  }
+  .mentor-card img {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+/* Match Problem Statement Heading */
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #003366; /* Dark Blue like Problem Statement */
+  font-family: 'Times New Roman', serif; /* Same font style */
+}
+
+/* Image Styling */
+.solution-image {
+  width: 60%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 6px;
+}
+
+/* Description Text */
+.solution-description {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #003366; /* Blue text */
+  font-family: 'Times New Roman', serif;
+}
+
+.solution-banner {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.solution-banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* makes video cover the container */
+  z-index: -1;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* overlay for readability */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.solution-content {
+  text-align: center;
+  color: rgb(10, 0, 0);
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.solution-content h1 {
+   font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0959e3;
+}
+
+.solution-content p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: #0959e3;
+}
+
+.solution-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.solution-btn {
+  display: inline-block;
+  padding: 16px 40px;
+  background-color: #0b3d91;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.solution-btn:hover {
+  background-color: #074080;
+  transform: translateY(-3px);
+}
+
+/* Buttons for solution links */
+.solution-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.solution-btn {
+  display: inline-block;
+  padding: 16px 40px;
+  background-color: #0b3d91;
+  color: rgb(251, 251, 251);
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.solution-btn:hover {
+  background-color: #074080;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .solution-content h1 {
+    font-size: 36px;
+  }
+  .solution-content p {
+    font-size: 18px;
+  }
+  .solution-btn {
+    padding: 14px 30px;
+    font-size: 18px;
+  }
+}
+
+
+.problem-section {
+  padding: 80px 20px;
+  background-color: #f9f9f9; /* light background for contrast */
+  text-align: center;
+}
+
+.problem-section h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0b3d91;
+}
+
+.problem-description {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .problem-section h2 {
+    font-size: 32px;
+  }
+  .problem-description {
+    font-size: 16px;
+  }
+}
